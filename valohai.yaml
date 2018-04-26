@@ -8,10 +8,10 @@
       - python image_zip_to_numpy_array.py
     inputs:
       - name: my-datasets
-        default: https://s3-eu-west-1.amazonaws.com/valohai-examples/integration-example/numbers.zip
+        default: https://s3-eu-west-1.amazonaws.com/twohat-valohai//home/david.wang/valohai/tensorflow-open_nsfw/dataset.zip
 
 - step:
     name: environment-check
-    image: python:3.6
+    image: tensorflow/tensorflow:latest-py3
     command:
       - printenv

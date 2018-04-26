@@ -65,7 +65,7 @@ def main(settings):
 
     # you can save this dataset to e.g. a HDF5 file to be uploaded for further usage
     # all of this is of course totally optional and just a one way to manage your features
-    h5f = h5py.File(os.path.join(settings.outputs_dir, 'features.h5'), 'w')
+    h5f = h5py.File(os.path.join(settings.outputs_dir, 'features-1.h5'), 'w')
     h5f.create_dataset('dataset_1', data=dataset)
     h5f.close()
 
