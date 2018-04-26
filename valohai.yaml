@@ -2,7 +2,7 @@
 
 - step:
     name: image-zip-to-numpy-array
-    image: python:3.6
+    image: tensorflow/tensorflow:latest-py3
     command:
       - pip install --quiet numpy h5py Pillow
       - python image_zip_to_numpy_array.py
